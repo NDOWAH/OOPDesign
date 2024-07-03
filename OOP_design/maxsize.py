@@ -3,17 +3,17 @@ class MaxSizeList(object):
     number of integers
     params:
     list_size: max list size to return"""
-    word_list = []
 
     def __init__(self, list_size):
         self.list_size = list_size
+        self.word_list = []
 
     def push(self, word):
         """insert words into the class word_list
         param
         ======
         word: word to be inserted into word word_list"""
-        MaxSizeList.word_list.append(word)
+        self.word_list.append(word)
 
     def get_list(self):
         """Returns list of inserted words of size as list_size(if list_size is greater than
@@ -34,3 +34,4 @@ b.push('hey')
 b.push('let\'s')
 b.push('go')
 print(b.get_list())
+
